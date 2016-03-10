@@ -25,4 +25,4 @@ jekyll new [folder name]
 ```
 
 finally the page sample with default style would be like this.
-![sample_page_01](/blog/images/sample_page_01.png)
+![sample_page_01](/images/sample_page_01.png)
