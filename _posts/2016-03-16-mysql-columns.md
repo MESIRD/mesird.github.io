@@ -18,7 +18,7 @@ Then I found I can select the useful information from database then copy them to
 `IS_NULLABLE`                  是否为空  
 `DATA_TYPE`                    数据类型  
 `CHARACTER_MAXIMUM_LENGTH`     字符最大长度  
-`CHARACTER_MOCTET_LENGTH`      字节最大长度（[两者区别](http://dba.stackexchange.com/questions/74153/difference-between-character-maximum-length-and-character-octet-length)）  
+`CHARACTER_OCTET_LENGTH`       字节最大长度（[两者区别](http://dba.stackexchange.com/questions/74153/difference-between-character-maximum-length-and-character-octet-length)）  
 `NUMERIC_PRECISION`            数据精度  
 `NUMERIC_SCALE`                （不太清楚）  
 `DATETIME_PRECISION`           日期精度  
