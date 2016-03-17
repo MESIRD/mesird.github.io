@@ -27,3 +27,6 @@ Then I found I can select the useful information from database then copy them to
 `COLUMN_TYPE`                  列类型（包含位数）  
 `PRIVILEGES`                   权限  
 `COLUMN_COMMENT`               列备注  
+
+You can also use the following script to select all retained variables:  
+`select * from information_schema.columns where TABLE_NAME = ‘xxx'`
