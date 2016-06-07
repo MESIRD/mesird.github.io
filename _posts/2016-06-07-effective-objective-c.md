@@ -5,15 +5,15 @@ date:   2016-06-07 10:45:10 +0800
 author: "mesird"
 ---
 
-# Effective Objective-C 2.0
-1. **Familiarize yourself with Objective-C’s Roots**
+# Effective Objective-C 2.0  
+1. **Familiarize yourself with Objective-C’s Roots**  
     - method calling is based on messaging
     - Objective-C object is stored on Heap whereas struct object as basic type data is stored on Stack
-2. **Minimize Importing Headers in Headers**
+2. **Minimize Importing Headers in Headers**  
     - using `@class` rather than `#import`
     - moving protocol-conformance declaration to class-continuation category is better
     - importing header files in implementation as possible as your can
-3. **Prefer Literal Syntax over the Equivalent Methods**
+3. **Prefer Literal Syntax over the Equivalent Methods**  
     - define Objective-C objects with Literal Syntax like
         
         ```
@@ -23,7 +23,7 @@ author: "mesird"
         NSString *fox = animals[0];
         NSDictionary *personInfo = @{@“firstName”:@“Nick”, @“lastName”:@“Ben”, @“age”, @18};
         ```
-4. **Prefer Typed Constants to Preprocessor #define**
+4. **Prefer Typed Constants to Preprocessor #define**  
     - using constant rather than preprocessor
     
         ```
@@ -33,7 +33,7 @@ author: "mesird"
         extern NSString *const kOptionUserInfoTarget; [in header file]
         NSString *const KOptionUserInfoTarget = @“OptionUserInfoTarget”; [in implementation file]
         ```
-5. **Use Enumerations for States, Options, and Status Codes**
+5. **Use Enumerations for States, Options, and Status Codes**  
     - enumeration definition
     
         ```
@@ -54,7 +54,7 @@ author: "mesird"
             MSAlertComponentButton	 = 1 << 2
         }
         ```
-6. **Understand Properties**
+6. **Understand Properties**  
     - attributes
         * readwrite : both a getter and a setter are available
         * readonly  : only a getter is available
@@ -89,7 +89,7 @@ author: "mesird"
             ```
             newValue = [oldValue copy];
             ```
-7. **Access Instance Variables Primarily Directly When Accessing**
+7. **Access Instance Variables Primarily Directly When Accessing**  
     - Them Internally
         * direct access on properties
             * undoubtedly faster
@@ -105,7 +105,7 @@ author: "mesird"
             * key-value observing(KVO) will not be fired (whether it is
               correct or not depending on what you want)
             * easy to debug 
-8. **Understand Object Equality**
+8. **Understand Object Equality**  
     - Equality
         * ‘ == ‘  : whether the two objects own the same address
         * isEqual : whether the two objects have the same hash
@@ -116,7 +116,7 @@ author: "mesird"
         aSet = {((1,2), (1,2))}
         bSet = [aSet copy]; // bSet is {((1,2))}
         ```
-9. **Use the Class Cluster Pattern to Hide Implementation Detail**
-10. **Use Associated Objects to Attach Custom Data to Existing Classes**
-11. **Understand the Role of objc_msgSend**
-12. **Understand Message Forwarding**
+9. **Use the Class Cluster Pattern to Hide Implementation Detail**  
+10. **Use Associated Objects to Attach Custom Data to Existing Classes**  
+11. **Understand the Role of objc_msgSend**  
+12. **Understand Message Forwarding**  
