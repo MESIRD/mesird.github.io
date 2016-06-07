@@ -5,7 +5,6 @@ date:   2016-06-07 10:45:10 +0800
 author: "mesird"
 ---
 
-# Effective Objective-C 2.0  
 1. **Familiarize yourself with Objective-C’s Roots**  
     - method calling is based on messaging
     - Objective-C object is stored on Heap whereas struct object as basic type data is stored on Stack
@@ -17,10 +16,10 @@ author: "mesird"
     - define Objective-C objects with Literal Syntax like
         
         ```
-        NSNumber *maxCount = @3;
-        NSString *userName = @“Nick”;
-        NSArray *animals = @[@“fox”, @“chicken”, @“cat”];
-        NSString *fox = animals[0];
+        NSNumber *maxCount = @3;  
+        NSString *userName = @“Nick”;  
+        NSArray *animals = @[@“fox”, @“chicken”, @“cat”];  
+        NSString *fox = animals[0];  
         NSDictionary *personInfo = @{@“firstName”:@“Nick”, @“lastName”:@“Ben”, @“age”, @18};
         ```
 4. **Prefer Typed Constants to Preprocessor #define**  
