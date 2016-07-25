@@ -1,19 +1,39 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-title: MESIRD's blog
-email: mesird@126.com
-description: > # this means to ignore newlines until "baseurl:"
-  personal blog, most passages are related to iOS programming. Contact me if you have problems.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://mesird.github.io" # the base hostname & protocol for your site
-twitter_username: 
-github_username:  mesird
+title: Mesird's Dev Blog
+description: 'a personal iOS development blog'
+url: 'http://mesird.com'
+# baseurl: '/jekyll-uno/'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Mesird'
+  email: mesird@126.com
+  twitter_username: mesird
+  facebook_username: 徐杰
+  github_username:  MESIRD
+  linkedin_username:  徐杰
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
 
 # Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
 markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']

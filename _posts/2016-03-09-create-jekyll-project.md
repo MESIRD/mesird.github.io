@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "Create jekyll project on mac"
-date:   2016-03-09 17:59:20 +0800
-author: "mesird"
+date:   2016-03-09 17:59:20
+categories: [jekyll]
+tags: [jekyll]
 ---
 
 [Jekyll Quick Start](https://jekyllrb.com/docs/quickstart)
@@ -61,3 +62,5 @@ This is your Home page.
 
 finally the page sample with default style would be like this.  
 ![sample_page](/images/sample_page.png)
+
+
