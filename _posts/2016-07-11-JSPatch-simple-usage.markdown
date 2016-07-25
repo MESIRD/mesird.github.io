@@ -14,9 +14,11 @@ tags: JSPatch
 ## import
 
 **cocoapods**
-*you can add `pod 'JSPatch', '~> 1.0'` in your Podfile, run `pod install`
+*you can add `pod 'JSPatch', '~> 1.0'` in your Podfile, run `pod install`*
+
 **framework**
 *download JSPatch SDK from [JSPatch platform](http://www.jspatch.com/Index/sdk), then add this framework into your project*
+
 **files**
 *download JSPatch project on [Github/JSPatch](https://github.com/bang590/JSPatch), then copy `JSPatch.js`, `JPEngine.h`, `JPEngine.m` three files to your project*
 
