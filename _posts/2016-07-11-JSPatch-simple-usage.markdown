@@ -7,6 +7,7 @@ tags: JSPatch
 ---
 
 ## introduction
+
 **official introduction**   [Github/JSPatch](https://github.com/bang590/JSPatch)
 
 > JSPatch bridges Objective-C and JavaScript using the Objective-C runtime. You can call any Objective-C class and method in JavaScript by just including a small engine. That makes the APP obtaining the power of script language: add modules or replacing Objective-C code to fix bugs dynamically.
@@ -26,7 +27,9 @@ tags: JSPatch
 JSPatch needs `libz.dylib` and `JavaScriptCore.framework`, thus import the two framework.
 
 ## start
+
 **local**
+
 * add a javascript file to your project
 * add your own JSPatch code in js file
 * add following code at the most beginning position your application initialize, basically we add at the beginning of `application:didFinishLaunchingWithOptions:`.
@@ -38,6 +41,7 @@ NSString *scriptPath = [[[NSBundle mainBundle] bundlePath] stringByAppendingPath
 ```
 
 **JSPatch platform**
+
 * add following code at the beginning of the method `application:didFinishLaunchingWithOptions:`
 
 ```
@@ -46,7 +50,9 @@ NSString *scriptPath = [[[NSBundle mainBundle] bundlePath] stringByAppendingPath
 ```
 
 ## syntax
+
 **[official document - basic usage](https://github.com/bang590/JSPatch/wiki/JSPatch-基础用法)**
+
 **require**
 
 before using every OC-defined object, you need to use `require` syntax to get the privilege of use, like this 
