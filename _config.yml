@@ -1,8 +1,8 @@
 # Site settings
 title: Mesird's Dev Blog
 description: 'a personal iOS development blog'
-url: 'http://mesird.com'
-# baseurl: '/mesird-blog/'
+url: 'http://mesird.com/mesird-blog'
+baseurl: '/mesird-blog/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
