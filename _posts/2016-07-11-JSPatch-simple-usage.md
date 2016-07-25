@@ -163,6 +163,26 @@ var blk = block("BOOL, NSDictionary*, NSError*", function(succeed, result, error
 })
 ```
 
+**GCD**
+
+```
+dispatch_after(1.0, function() {
+    // some operation
+})
+
+dispatch_async_main(function() {
+    // some operation
+})
+
+dispatch_sync_main(function() {
+    // some operation
+})
+
+dispatch_async_global_queue(function() {
+    // some operation
+})
+```
+
 **debug**
 
 * printing log message in console
