@@ -26,14 +26,8 @@ defaults:
 destination: _site
 paginate: 10
 permalink: /:year/:title/
-markdown: kramdown
+markdown: rdiscount
 highlighter: rouge
-
-kramdown:
-  # use Github Flavored Markdown
-  input: GFM
-  # do not replace newlines by <br>s
-  hard_wrap: false
 
 gems: ['jekyll-paginate']
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
