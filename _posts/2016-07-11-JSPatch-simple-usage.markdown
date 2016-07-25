@@ -8,9 +8,11 @@ tags: JSPatch
 
 ## introduction
 **official introduction**   [Github/JSPatch](https://github.com/bang590/JSPatch)
+
 > JSPatch bridges Objective-C and JavaScript using the Objective-C runtime. You can call any Objective-C class and method in JavaScript by just including a small engine. That makes the APP obtaining the power of script language: add modules or replacing Objective-C code to fix bugs dynamically.
 
 ## import
+
 **cocoapods**
 *you can add `pod 'JSPatch', '~> 1.0'` in your Podfile, run `pod install`
 **framework**
@@ -20,6 +22,7 @@ tags: JSPatch
 
 ## before starting
 JSPatch needs `libz.dylib` and `JavaScriptCore.framework`, thus import the two framework.
+
 ## start
 **local**
 * add a javascript file to your project
@@ -39,6 +42,7 @@ NSString *scriptPath = [[[NSBundle mainBundle] bundlePath] stringByAppendingPath
 [JSPatch startWithAppKey:appKey];   // appKey is offer on JSPatch platform
 [JSPatch sync];
 ```
+
 ## syntax
 **[official document - basic usage](https://github.com/bang590/JSPatch/wiki/JSPatch-基础用法)**
 **require**
