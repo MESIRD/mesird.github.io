@@ -2,8 +2,8 @@
 layout: post
 title:  "Create jekyll project on mac"
 date:   2016-03-09 17:59:20
-categories: [jekyll]
-tags: [jekyll]
+categories: Jekyll
+tags: Jekyll
 ---
 
 [Jekyll Quick Start](https://jekyllrb.com/docs/quickstart)
@@ -28,7 +28,7 @@ jekyll new [folder name]
 ```
 
 there're several folders and files that would be created after jekyll set up, project would be like this(*README.md is a file created by github*):  
-![project](/images/project_list.png)
+![project](/images/create-jekyll-project-on-mac/project_list.png)
 
 **_config.yml**  
 you can config your project with some global variables in `_config.yml`, like website title, description etc.
@@ -61,6 +61,6 @@ this folder is created by myself, you can name it some other ways like `resource
 This is your Home page.
 
 finally the page sample with default style would be like this.  
-![sample_page](/images/sample_page.png)
+![sample_page](/images/create-jekyll-project-on-mac/sample_page.png)
 
 

@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "JSPatch simple usage"
-date:   2016-07-11 16:07:10 +0800
-author: "mesird"
+date:   2016-07-11 16:07:10
+categories: JSPatch
+tags: JSPatch
 ---
 
 ## introduction

@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "Effective Objective-C 2.0"
-date:   2016-06-07 10:45:10 +0800
-author: "mesird"
+date:   2016-06-07 10:45:10
+categories: Objective-C
+tags: Objective-C
 ---
 
 1. **Familiarize yourself with Objective-C’s Roots**  
@@ -37,10 +38,10 @@ author: "mesird"
     
         ```
         typedef NS_ENUM(NSInteger, MSHUDType) {
-            MSHUDTypeGeneral 		= 0,
-            MSHUDTypeText 		 	= 1,
-            MSHUDTypeCompletion 	= 2,
-            MSHUDTypeError 			= 3
+            MSHUDTypeGeneral	= 0,
+            MSHUDTypeText 	= 1,
+            MSHUDTypeCompletion = 2,
+            MSHUDTypeError 	= 3
         }
         ```
     
@@ -48,9 +49,9 @@ author: "mesird"
     
         ```
         typedef NS_OPTIONS(NSInteger, MSAlertComponent) {
-            MSAlertComponentTitle	 = 1 << 0,
-            MSAlertComponentContent	 = 1 << 1,
-            MSAlertComponentButton	 = 1 << 2
+            MSAlertComponentTitle = 1 << 0,
+            MSAlertComponentContent = 1 << 1,
+            MSAlertComponentButton = 1 << 2
         }
         ```
 6. **Understand Properties**  
@@ -119,3 +120,5 @@ author: "mesird"
 10. **Use Associated Objects to Attach Custom Data to Existing Classes**  
 11. **Understand the Role of objc_msgSend**  
 12. **Understand Message Forwarding**  
+
+

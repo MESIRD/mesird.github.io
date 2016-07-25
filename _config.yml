@@ -2,7 +2,7 @@
 title: Mesird's Dev Blog
 description: 'a personal iOS development blog'
 url: 'http://mesird.com'
-# baseurl: '/jekyll-uno/'
+baseurl: '/mesird-blog'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
@@ -10,9 +10,9 @@ author:
   name: 'Mesird'
   email: mesird@126.com
   twitter_username: mesird
-  facebook_username: 徐杰
+  facebook_username: holy_mesird
   github_username:  MESIRD
-  linkedin_username:  徐杰
+  linkedin_username:  杰-徐-95647a92
 
 defaults:
   -

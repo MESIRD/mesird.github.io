@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "nginx intro"
-date:   2016-03-16 09:46:20 +0800
-author: "mesird"
+date:   2016-03-16 09:46:20
+categories: Nginx
+tags: Nginx
 ---
 **Start**  
 `./nginx`
@@ -48,3 +49,4 @@ location ^~ /admin/ {
 }
 ```   
 如果URI为 `/admin/invest/queryList.json`，服务器会返回`/web/invest/queryList.json`
+

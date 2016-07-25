@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "mysql columns"
-date:   2016-03-16 20:50:20 +0800
-author: "mesird"
+date:   2016-03-16 20:50:20
+categories: MySql
+tags: MySql
 ---
 
 Today I found that our project still had no formal database document, so I decided to collect and write one.  
@@ -30,3 +31,4 @@ Then I found I can select the useful information from database then copy them to
 
 You can also use the following script to select all retained variables:  
 `select * from information_schema.columns where TABLE_NAME = ‘xxx'`
+
