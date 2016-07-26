@@ -24,7 +24,7 @@ tags: JSPatch
 *download JSPatch project on [Github/JSPatch](https://github.com/bang590/JSPatch), then copy `JSPatch.js`, `JPEngine.h`, `JPEngine.m` three files to your project*
 
 ## before starting
-JSPatch needs `libz.dylib` and `JavaScriptCore.framework`, thus import the two framework.
+JSPatch needs `libz.dylib` and `JavaScriptCore.framework`, thus importing the two frameworks before you start.
 
 ## start
 
@@ -55,14 +55,14 @@ NSString *scriptPath = [[[NSBundle mainBundle] bundlePath] stringByAppendingPath
 
 **require**
 
-before using every OC-defined object, you need to use `require` syntax to get the privilege of use, like this 
+before using every OC-defined object, you need to use `require` keyword to get the privilege of using it, like this 
 
 ```
 require('UIColor')
 UIColor.whiteColor()
 ```
 
-you can also require multi-class together
+you can also require several classes together
 
 ```
 require('UIColor,UIFont,UILabel')
@@ -71,7 +71,7 @@ UIFont.systemFontSize()
 UILabel.alloc().init()
 ```
 
-also using require directly
+also using require and invoke method in one line
 
 ```
 require('UIColor').whiteColor()
@@ -79,7 +79,7 @@ require('UIColor').whiteColor()
 
 **defineClass**
 
-whenever you want to replace a method in a class, you need to use `defineClass` to get the privilege of this class, the parameters are explained below
+whenever you want to replace a method in a class, you need to use `defineClass` to make sure which class you want to use, the parameters are explained below
 
 ```
 defineClass('ClassName', [newParameter1, newParameter2], {instance methods}, {class methods})
