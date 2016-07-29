@@ -6,7 +6,6 @@ categories: Git
 tags: Git
 ---
 
-# Basic Git Commands
 **git status**
 *show status of current branch*
 
