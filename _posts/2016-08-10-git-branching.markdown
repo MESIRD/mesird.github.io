@@ -3,7 +3,7 @@ layout: post
 title:  "Git Branching"
 date:   2016-08-10 19:12:20
 categories: Git
-tags: Branching
+tags: Git
 ---
 
 **git branch**

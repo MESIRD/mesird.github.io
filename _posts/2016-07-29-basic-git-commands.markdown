@@ -69,6 +69,7 @@ tags: Git
 | %cd | Committer date |
 | %cr | Committer date, relative |
 | %s | Subject |
+
 > `author` is the person who modifies the file, `committer` is who make the commit
 
 * `git log --pretty=oneline --graph` show log with ascii graph
