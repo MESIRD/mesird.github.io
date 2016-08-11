@@ -6,10 +6,6 @@ categories: JSPatch
 tags: JSPatch
 ---
 
-## introduction
-
-**official introduction**   [Github/JSPatch](https://github.com/bang590/JSPatch)
-
 > JSPatch bridges Objective-C and JavaScript using the Objective-C runtime. You can call any Objective-C class and method in JavaScript by just including a small engine. That makes the APP obtaining the power of script language: add modules or replacing Objective-C code to fix bugs dynamically.
 
 ## import
