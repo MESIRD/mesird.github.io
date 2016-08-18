@@ -272,11 +272,11 @@ To get the crash log on a specified device, you still need to connect your devic
 
 You'll get a view like this.
 
-![](media/14712460764028/14713674830883.jpg)
+![](/images/get-crash-logs-on-mobile-device/xcode_device.png)
 
 Press `View Device Logs`, and select `All Logs`. All recent crash logs of each application are shown below, choose one that you want to see, and the translated crash log displays on the right.
 
-![](media/14712460764028/14713681557915.jpg)
+![](/images/get-crash-logs-on-mobile-device/crash_log.png)
 
 Sometimes you notice that there's no difference between the crash log from Xcode and the crash log from user directory, that means Xcode cannot symbolicate this crash log backtrace. So How could this happen?
 
@@ -355,7 +355,8 @@ Symbolicating with .dSYM file
     ```
     
 
-> references
+references
+------
 
 [iOS应用崩溃日志揭秘](http://blog.csdn.net/cuiweijie3/article/details/8778198)    
 [Symbolicating Crash Logs](https://iostechblog.wordpress.com/2013/08/28/symbolicating-crash-logs/)    
