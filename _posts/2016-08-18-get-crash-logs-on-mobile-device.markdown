@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Get crash logs on mobile device"
-date:   2016-07-18 15:43:20
+date:   2016-08-18 15:43:20
 categories: iOS
 tags: iOS
 ---
