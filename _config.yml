@@ -1,34 +1,53 @@
-# Site settings
-title: Mesird's Dev Blog
-description: 'a personal iOS development blog'
-url: 'http://mesird.com'
-baseurl: '/'
-# google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'your-disqus-name'
+# # # # # # # # #
+#  M E S I R D  #
+# # # # # # # # #
 
-author:
-  name: 'Mesird'
-  email: mesird@126.com
-  twitter_username: mesird
-  facebook_username: holy_mesird
-  github_username:  MESIRD
-  linkedin_username:  杰-徐-95647a92
+# Basic
+name:               "Mesird's Dev Blog"
+description:        "a personal iOS development blog"
 
+# jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
+url:                "http://mesird.com"
+author:             "Mesird"
+twitter:
+  username:         "mesird"
+#facebook:
+#  app_id:           1234
+#    publisher:      1234
+
+# URL
+baseurl:            ""
+#baseurl:            "" #For Root Domain
+permalink:          /:year/:month/:day/:title/
+
+# Markdown
+markdown:           kramdown
+
+# Navigation
+nav:
+  - name:           "About"
+    href:           "http://mesird.com/about"
+#  - name:           "Download"
+#    href:           "//github.com/gfjaru/Kiko/releases"
+
+# Sass
+sass:
+  style:            :compressed
+
+# Scopes
 defaults:
   -
     scope:
-      path: ''
-      type: 'posts'
+      path:         ""
+      type:         "pages"
     values:
-        layout: 'post'
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
 
-# Build settings
-destination: _site
-paginate: 10
-permalink: /:categories/:title/
-markdown: kramdown
-highlighter: rouge
-
-gems: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
-
+gems:
+  - jekyll-seo-tag

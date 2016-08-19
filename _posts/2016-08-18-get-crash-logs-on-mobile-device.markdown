@@ -332,8 +332,8 @@ Address: MyAppName[0x00000001000fb495] (MyAppName.__TEXT.__text + 1020165)
 Summary: MyAppName`-[MyViewController viewDidLoad] + 85 at MyViewController.m:43
 ```
 
-------
 Symbolicating with .dSYM file
+------
 
 * Xcode    
     Before you gonna symbolicate crash log, there're some files required. 
