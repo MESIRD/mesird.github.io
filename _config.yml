@@ -3,7 +3,7 @@
 # # # # # # # # #
 
 # Basic
-name:               "Mesird's Dev Blog"
+name:               "Mesird"
 description:        "a personal iOS development blog"
 
 # jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
@@ -11,6 +11,10 @@ url:                "http://mesird.com"
 author:             "Mesird"
 twitter:
   username:         "mesird"
+github:
+  username:         "MESIRD"
+facebook:
+  username:         "holy_mesird"
 #facebook:
 #  app_id:           1234
 #    publisher:      1234
@@ -25,10 +29,10 @@ markdown:           kramdown
 
 # Navigation
 nav:
+  - name:           "@Github"
+    href:           "https://github.com/MESIRD"
   - name:           "About"
-    href:           "http://mesird.com/about"
-#  - name:           "Download"
-#    href:           "//github.com/gfjaru/Kiko/releases"
+    href:           "/about"
 
 # Sass
 sass:

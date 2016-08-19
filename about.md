@@ -3,6 +3,12 @@ title: About
 permalink: /about/
 ---
 
-<p class="lead"><a href="http://github.com/gfjaru/Kiko">Kiko</a> is a theme for <a href="http://jekyllrb.com">Jekyll</a>, the static site generator.</p>
+I'm mesird, an iOS developer in Hangzhou China.
 
-Kiko is simple, lightweight theme. It's designed and developed by [@gfjaru](https://twitter.com/gfjaru).
+I'd like to share my study experiences in this blog. Anyone who's interested in my passages, I'm willing to have discussion with all of you.
+
+-------
+Email: mesird@126.com
+
+
+
