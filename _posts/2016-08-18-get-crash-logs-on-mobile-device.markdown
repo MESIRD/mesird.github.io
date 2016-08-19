@@ -347,8 +347,7 @@ Symbolicating with .dSYM file
     with these two files, Xcode will help you symbolicate the crash log.
     
 * Command   
-    * atos [-o AppName.app/AppName] [-l loadAddress] [-arch architecture]    
-    * atos [-arch architecture] [-o AppName] [address]
+    Usage: atos [-p pid] [-o executable] [-f file] [-s slide | -l loadAddress] [-arch architecture] [-printHeader] [address ...]
     
     ```
     atos -arch armv7 -o MyAppName 0x00564366
