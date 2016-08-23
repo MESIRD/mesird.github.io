@@ -45,24 +45,24 @@ tags: Objective-C
 
     * enumeration definition
     
-    ```
-    typedef NS_ENUM(NSInteger, MSHUDType) {
-        MSHUDTypeGeneral	= 0,
-        MSHUDTypeText 	= 1,
-        MSHUDTypeCompletion = 2,
-        MSHUDTypeError 	= 3
-    }
-    ```
+```
+typedef NS_ENUM(NSInteger, MSHUDType) {
+   MSHUDTypeGeneral	= 0,
+   MSHUDTypeText 	= 1,
+   MSHUDTypeCompletion = 2,
+   MSHUDTypeError 	= 3
+}
+```
     
     * option definition
 
-    ```
-    typedef NS_OPTIONS(NSInteger, MSAlertComponent) {
-        MSAlertComponentTitle = 1 << 0,
-        MSAlertComponentContent = 1 << 1,
-        MSAlertComponentButton = 1 << 2
-    }
-    ```
+```
+typedef NS_OPTIONS(NSInteger, MSAlertComponent) {
+   MSAlertComponentTitle = 1 << 0,
+   MSAlertComponentContent = 1 << 1,
+   MSAlertComponentButton = 1 << 2
+}
+```
 
 6. Understand Properties
 
