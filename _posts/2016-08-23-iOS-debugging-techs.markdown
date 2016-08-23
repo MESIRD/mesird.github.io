@@ -168,11 +168,11 @@ UI调试工具种类繁多，在此我介绍两款我使用过并极力推荐的
 
 左侧导航器中，展示了所有界面中存在的View，中间主窗口为3D效果的界面展示，可以通过拖拽、缩放、平移进行交互，右侧为选中控件的属性展示。接下来我将详细介绍一下关于Reveal的使用方法。
 
-<img src="/images/ios-debugging-techs/reveal_left.jpg" width=60% />
+![](/images/ios-debugging-techs/reveal_left.jpg)
 
 当你成功运行一个App后，若Reveal没有自动载入，你可以点击红色方框对应按钮，选择你当前正在运行的项目，Reveal就会将该App对应的视图层级加载到主界面中。下方以包含关系列出了所有视图，双击某个视图将其单独显示在主视图中，点击红色方框左侧的左箭头返回上一级视图，点击红色箭头所指按钮可以查看约束信息。
 
-<img src="/images/ios-debugging-techs/reveal_main.jpg" width=60% />
+![](/images/ios-debugging-techs/reveal_main.jpg)
 
 在主界面中，你可以看到当前App运行的界面层级，顶部按钮从左到右依次是 线框、原视图、线框+原视图、缩放比例、正视图及3D视图。在主界面中，左右拖拽可以在不同角度查看，点击某个视图，会将该视图属性展示在右侧的属性检查器中。
 
