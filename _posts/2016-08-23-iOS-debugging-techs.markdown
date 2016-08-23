@@ -115,7 +115,7 @@ tags: iOS
 
 ### LLDB
 
-LLDB作为
+// FIXME
 
 **调试命令**
 
@@ -176,11 +176,11 @@ UI调试工具种类繁多，在此我介绍两款我使用过并极力推荐的
 
 在主界面中，你可以看到当前App运行的界面层级，顶部按钮从左到右依次是 线框、原视图、线框+原视图、缩放比例、正视图及3D视图。在主界面中，左右拖拽可以在不同角度查看，点击某个视图，会将该视图属性展示在右侧的属性检查器中。
 
-<img src="/images/ios-debugging-techs/reveal_right_1.jpg" width=200px />
-<img src="/images/ios-debugging-techs/reveal_right_2.jpg" width=200px />
-<img src="/images/ios-debugging-techs/reveal_right_3.jpg" width=200px />
-<img src="/images/ios-debugging-techs/reveal_right_4.jpg" width=200px />
-<img src="/images/ios-debugging-techs/reveal_right_5.jpg" width=200px />
+![](/images/ios-debugging-techs/reveal_right_1.jpg)
+![](/images/ios-debugging-techs/reveal_right_2.jpg)
+![](/images/ios-debugging-techs/reveal_right_3.jpg)
+![](/images/ios-debugging-techs/reveal_right_4.jpg)
+![](/images/ios-debugging-techs/reveal_right_5.jpg)
 
 属性检查器的能力非常强大，几乎可以修改所有关于视图相关的内容。以下是每个检查器所能查看及修改的内容：
 
@@ -207,16 +207,16 @@ UI调试工具种类繁多，在此我介绍两款我使用过并极力推荐的
 
 启动后，如Reveal相同，可以查看App当前视图层级的3D展示
 
-<img src="/images/ios-debugging-techs/xcode_main.jpg" width=60% />
+![](/images/ios-debugging-techs/xcode_main.jpg)
 
 左侧依然是视图层级列表，默认包含了约束信息（若默认不是展示视图列表，需要选择`View UI Hierarchy`）
 
-<img src="/images/ios-debugging-techs/xcode_left.jpg" width=300px />
+![](/images/ios-debugging-techs/xcode_left.jpg)
 
 选择一个控件后，对象检查器(Object Inspector)与尺寸检查器(Size Inspector)中展示了相关信息，但仅仅只能查看不支持修改。
 
-<img src="/images/ios-debugging-techs/xcode_right_1.jpg" width=300px />
-<img src="/images/ios-debugging-techs/xcode_right_2.jpg" width=300px />
+![](/images/ios-debugging-techs/xcode_right_1.jpg)
+![](/images/ios-debugging-techs/xcode_right_2.jpg)
 
 **两者对比：**
 
