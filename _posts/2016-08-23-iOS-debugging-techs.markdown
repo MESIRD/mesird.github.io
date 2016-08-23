@@ -176,11 +176,7 @@ UI调试工具种类繁多，在此我介绍两款我使用过并极力推荐的
 
 在主界面中，你可以看到当前App运行的界面层级，顶部按钮从左到右依次是 线框、原视图、线框+原视图、缩放比例、正视图及3D视图。在主界面中，左右拖拽可以在不同角度查看，点击某个视图，会将该视图属性展示在右侧的属性检查器中。
 
-![](/images/ios-debugging-techs/reveal_right_1.jpg)
-![](/images/ios-debugging-techs/reveal_right_2.jpg)
-![](/images/ios-debugging-techs/reveal_right_3.jpg)
-![](/images/ios-debugging-techs/reveal_right_4.jpg)
-![](/images/ios-debugging-techs/reveal_right_5.jpg)
+![](/images/ios-debugging-techs/reveal_right.jpg)
 
 属性检查器的能力非常强大，几乎可以修改所有关于视图相关的内容。以下是每个检查器所能查看及修改的内容：
 
