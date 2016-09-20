@@ -340,6 +340,9 @@ Symbolicating with .dSYM file
     
     **.dSYM(Symbol) file**    
     Every time build or archive application, Xcode would generate a version-related file to store symbol information, which is useful for debugging and symbolicating crash report.
+    
+    The .dSYM file path: 
+    Find archive file : `~/Library/Developer/Xcode/Archives/(archive date)/xxx.xcarchive`, then right click to show package content. the .dSYM file is located at `dSYMs/MyAppName.app.dSYM`.
 
     **binary file**    
     the application binary file.
@@ -349,10 +352,17 @@ Symbolicating with .dSYM file
 * Command   
     Usage: atos [-p pid] [-o executable] [-f file] [-s slide | -l loadAddress] [-arch architecture] [-printHeader] [address ...]
     
+    a line of crash report looks like this:  
+    
     ```
-    atos -arch armv7 -o MyAppName 0x00564366
+    34  MyAppName                     0x0000000100165184 0x100024000 + 1315204
     ```
     
+    using following command to get the method name and line number
+    
+    ```
+    atos -o MyAppName.app.dSYM/Contents/DWARF/MyAppName -arch ARM7 -l 0x100024000 0x0000000100165184
+    ```
 
 references
 ------
