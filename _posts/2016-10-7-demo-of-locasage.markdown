@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "mysql columns"
-date:   2016-03-16 20:50:20
-categories: MySql
-tags: MySql
+title:  "demo of locasage"
+date:   2016-10-07 20:50:20
+categories: Locasage
+tags: Locasage
 ---
 
 ## 一、简介
