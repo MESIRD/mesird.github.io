@@ -93,7 +93,9 @@ Notice that `dequeueReusableCellWithIdentifier:` returns nil if the identifier w
 
 > If table view registers a nib, `initWithCoder:` will be called to create a cell, while `initWithStyle:reuseIdentifier:` is called if table view registers a class.
 
+Until now, a table view can displayed with above configurations, there are still any other methods to help table view work well.
 
+When we want to interact with a specified row, like tap, swipe or any thing else, we need to implement associated methods.
 
 
 
