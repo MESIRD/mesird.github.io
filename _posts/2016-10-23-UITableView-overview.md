@@ -12,9 +12,9 @@ As a very frequently used view in iOS, we must know how to initialize, configure
 
 ## Basic usage
 
-**Initialization**
+### Initialization
 
-```
+```objc
 UITableView *tableView = [[UITableView alloc] initWithFrame:frame style:style];
 ```
 
@@ -31,22 +31,26 @@ However in `Grouped` style, table view has default background color which is `#E
 
 There are some other differences, we will talk later on.
 
-**Configuration**
+### Configuration
 
 UITableView needs a data source to know how many sections the tableview has and how many rows it has in the specified section. Also, there are lots of information that we need to provide to let table view know how to construct itself. Thus we need to assign `UITableViewDelegate` and `UITableViewDataSource` to table view.
 
 Normally, we set the current view controller as table view's `dataSource` and `delegate`, and implement some protocol methods in it.
 
-```
+```objc
 @interface MyViewController <UITableViewDataSource, UITableViewDelegate>
 ...
 tableView.dataSource = self;
 tableView.delegate   = self;
 ```
 
+Or you can simply set in storyboard by dragging dataSource and delegate's outlets to File Owner.
+
+![](/images/uitableview-overview/drag_outlet_in_sb.jpg)
+
 Two methods in UITableViewDataSource are required to implement:
 
-```
+```objc
 // How many rows the specified section contains
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 // What view does every row has
@@ -58,7 +62,7 @@ And this view, we typically name it `Cell`, could be a predefined style or a cus
 
 An index path define the position of each cell, it much easier to locate.
 
-```
+```objc
 @interface NSIndexPath (UITableView)
 + (instancetype)indexPathForRow:(NSInteger)row inSection:(NSInteger)section;
 @property (nonatomic, readonly) NSInteger section;
@@ -71,7 +75,7 @@ Good question. Provided that if a batch of cells are created, there must be a lo
 
 Cell Identifier - a unique symbol for every reused cell. UITableView has two methods to get a UITableViewCell instance with a cell identifier,
 
-```
+```objc
 - (nullable __kindof UITableViewCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier;
 - (__kindof UITableViewCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(6_0);
 ```
@@ -80,7 +84,7 @@ All cells are stored in a queue or list for the later use. As soon as the table 
 
 Both of the two methods can return a cell by searching the associated identifier in the queue or list. If no cell is found in it, the table view will create a cell. 
 
-```
+```objc
 - (void)registerNib:(nullable UINib *)nib forCellReuseIdentifier:(NSString *)identifier NS_AVAILABLE_IOS(5_0);
 - (void)registerClass:(nullable Class)cellClass forCellReuseIdentifier:(NSString *)identifier NS_AVAILABLE_IOS(6_0);
 ```
@@ -93,9 +97,55 @@ Notice that `dequeueReusableCellWithIdentifier:` returns nil if the identifier w
 
 > If table view registers a nib, `initWithCoder:` will be called to create a cell, while `initWithStyle:reuseIdentifier:` is called if table view registers a class.
 
-Until now, a table view can displayed with above configurations, there are still any other methods to help table view work well.
+Until now, a table view can displayed with above configurations, there are still some other methods to help table view work well.
+
+### Interaction
 
 When we want to interact with a specified row, like tap, swipe or any thing else, we need to implement associated methods.
+
+```objc
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+- (NSIndexPath *)tableView:(UITableView *)tableView willDeselectRowAtIndexPath:(NSIndexPath *)indexPath;
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath;
+```
+
+When a cell is selected or deselected, the related methods will be invoked. You can implement your custom operations in each method to achieve some purposes.
+
+#### selection style
+
+Normally, a cell has the default selection style (UITableViewCellSelectionStyleGray), and you can set no selection style using following code.
+
+```objc
+cell.selectionStyle = UITableViewCellSelectionStyleNone;
+```
+
+Then you can also set your custom selection style in classes inherited from UITableViewCell by overriding `setSelected:animated:` method. A concise demo like below:
+
+```objc
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
+    if (selected) {
+        self.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        self.accessoryType = UITableViewCellAccessoryNone;
+    }
+}
+```
+
+UITableView has single selection mode, which is default mode, and it supports multi-selection mode as well, just simply set the table view allows multi-selection.
+
+```objc
+tableView.allowsMultiSelection = YES;
+```
+
+#### editing
+
+
+
+
 
 
 
