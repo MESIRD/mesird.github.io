@@ -143,7 +143,53 @@ tableView.allowsMultiSelection = YES;
 
 #### editing
 
+Sometimes we want to delete a row in a config list, we would swipe left to see more menus and tap on delete button. While sometimes we want to reorder a row, we would tap on edit bar button item on the right-top of screen.
 
+We need to implement few methods to achieve it, cause a default table view does not have these two functions.
+
+```objc
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath;
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath;
+```
+
+To return `YES` at which the specified indexPath need to own the ability of deletion and movement. Then tell the table view what kind of edit actions the specified row need to have by implement the following method:
+
+```objc
+- (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    __weak typeof(self) weakSelf = self;
+    UITableViewRowAction *removeAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"Remove" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        [weakSelf.items removeObjectAtIndex:indexPath.row];
+        [weakSelf.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }];
+    
+    return @[removeAction];
+}
+```
+
+Notice that this method is available after iOS 8.0. The return value is a `UITableViewRowAction` array, and each row action is bound with a handler block. The block will be executed when you tap on the menu button.
+
+> Hint : Before you make any modification on table view, like insertion, deletion or movement, you have to modify the data source(array or anything else) first! Otherwise, table view will probably raise an exception if the model and view are not matched.
+> Like the above code, I remove the object from the item array before executing delete code to table view.
+
+UITableView has a `editing` variable to determine the editing state, and default it's NO. Whenever you want to make any editing action on the whole table view, set this variable to YES. Enclosing by `beginUpdates` and `endUpdates` you will get an animation.
+
+![](/images/uitableview-overview/14787082280882.jpg)
+
+If you just want the reorder function, that is to say just display reorder hamburger button on the right and without delete circle button on the left, you need to implement the following method:
+
+```objc
+- (BOOL)tableView:(UITableView *)tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath {
+    return NO;
+}
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return UITableViewCellEditingStyleNone;
+}
+```
+
+The first one notify table view that you do not need indent while it's in editing mode, and the second one tells table view you do not need any editing style on the specified row. Quite easy, right? It would look like this.
+
+![](/images/uitableview-overview/14787087129851.jpg)
 
 
 
