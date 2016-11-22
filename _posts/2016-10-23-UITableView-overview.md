@@ -191,6 +191,14 @@ The first one notify table view that you do not need indent while it's in editin
 
 ![](/images/uitableview-overview/14787087129851.jpg)
 
+## Advanced Usage
+
+### Dynamic Height of Table View Cell
+
+Generally, each cell in the table view has it's fixed height defined in storyboard or class file, like:
+
+![](/images/uitableview-overview/14790500517604.jpg)
+
 
 
 
