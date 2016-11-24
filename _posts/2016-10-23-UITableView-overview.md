@@ -191,6 +191,26 @@ The first one notify table view that you do not need indent while it's in editin
 
 ![](/images/uitableview-overview/14787087129851.jpg)
 
+#### menu
+
+We've all seen a `cut/copy/paste` menu when we made a tap-hold at somewhere, and perhaps you have known how to create such a menu on other controls like UILabel or UITextView. It is also worked in UITableView by tap-holding on a certain row.
+
+![](/images/uitableview-overview/14800085266032.jpg)
+
+As the picture above shows, there are three items on the menu - `Cut, Copy and Paste`. Each of these items can be removed or replaced by any other items.
+
+> Hint : See more item options, just set a breakpoint in `tableView:canPerformAction:forRowAtIndexPath:withSender:` method and watch `action` variable.
+
+Implement delegate methods:
+
+```objc
+- (BOOL)tableView:(UITableView *)tableView shouldShowMenuForRowAtIndexPath:(NSIndexPath *)indexPath;
+- (BOOL)tableView:(UITableView *)tableView canPerformAction:(SEL)action forRowAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender;
+- (void)tableView:(UITableView *)tableView performAction:(SEL)action forRowAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender;
+```
+
+First method decides whether the specified row can display menu, second determines what menu items can be displayed, and third one let table view know what to do after tapping on different item.
+
 ## Advanced Usage
 
 ### Dynamic Height of Table View Cell
@@ -198,6 +218,32 @@ The first one notify table view that you do not need indent while it's in editin
 Generally, each cell in the table view has it's fixed height defined in storyboard or class file, like:
 
 ![](/images/uitableview-overview/14790500517604.jpg)
+
+What if we want to display some text with uncertain content in a table view cell? The cell might have different hight with different text, so we need to set them independently. There are several ways to achieve that:
+
+* Implement delegate method
+
+```objc
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
+```
+
+All you need to do is implementing this method and return cell height that related to each indexPath. It is allowed to do some calculation, so that you could add some Class methods in each custom Cell Class to calculate its height with a model and use here.
+
+* AutoLayout calculation
+
+After iOS 6, auto layout is recommended by Apple to create UI. They also increase the usability in this respect (Dynamic cell height). 
+
+Provided that you want to realize a situation - dynamically changing during inputing, there is an easy way to do it with a new variable - `UITableViewAutomaticDimension` (iOS 8 and later). Return this value (actually it's a float value) in `heightForRowAtIndexPath`, `heightForHeaderInSection` or `heightForFooterInSection` methods, the table view would use a height which fits the corresponding delegate method like `titleForHeaderInSection`.
+
+Generally speaking, it can be regarded as a placeholder for cell height, once this value is returned, table view will use auto layout to calculate the actual content height of views in cell.
+
+There is a tutorial talking about how to create such dynamically changing cell, [click here](http://vit0.com/blog/2014/12/25/ios-textview-in-cell/) to see detail.
+
+## Small Tricks
+
+### Zero indent separator
+
+
 
 
 
