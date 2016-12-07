@@ -71,6 +71,8 @@ tags: iOS
 * 在Breakpoint Navigator底部点击`+`按钮，选择`Add Symbolic Breakpoint...`
 * 当执行到带有该符号的代码时，进入调试环境
 
+> 使用场景：有一回公司的 App 出现了一个诡异的现象，在登录完成后的首页立即点击其他的 Tab 切换到其他页面，1 秒后页面自动返回到首页。为了排查这个问题，首先我去第二个页面的 Class 中找有关 popViewController 的代码并设置断点，重现后断点并没有被执行到；之后又在第二个页面的 Class 中重写了 ViewWillDisappear 方法，并添加断点，打印函数堆栈，但是堆栈内都是系统框架级 API，也没有排查出任何结果；最终选择了符号断点，设置了 [UINavigationController popViewController:]、 [UINavigationController popToViewController:animate:] 和 [UINavigationController popToRootViewControllerAnimate:] 三个断点，最终重现后断点截获到了事件，原因是登录后延迟 1 秒发送了一条 Notification，让 NavigationController 返回到 rootViewController。
+
 #### 条件断点(Conditional)
 
 *通过局部添加断点，可以给断点设置过滤条件，满足条件时程序才会进入断点调试模式*
@@ -218,7 +220,7 @@ UI调试工具种类繁多，在此我介绍两款我使用过并极力推荐的
 
 1. Xcode调试UI时，无法在真机或模拟器上进行交互，相较而言Reveal则并不影响真机或模拟器上App的运行与用户操作，若需要再次获取视图层级时，只需要在Reveal中刷新即可，这点来说Xcode略显不足。
 2. Reveal在调试UI过程中，可以在属性检查器中查看并修改控件的相关属性，并且即时生效（不得不说这点非常强大），而Xcode在调试时并不能在属性检查器中修改属性，但是可以通过LLDB命令去修改（在之前已有介绍），不过不能即时生效，而是在结束界面调试后才能生效
-
+3. 在 Xcode 8 之前，Xcode UI 调试无法打开带有 UITextView 的页面，该问题已在 Xcode 8 中修复。
 
 
 ## 性能调优()
