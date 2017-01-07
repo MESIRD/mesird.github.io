@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Git Basic Usage"
+title:  "Git basic usage"
 date:   2016-08-10 19:12:20
 categories: Git
 tags: Git
