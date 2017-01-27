@@ -4,21 +4,283 @@
         <title></title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+        	body {
+        		width: 100%;
+        		margin: 0px;
+        		padding: 0px;
+        	}
+        	.header {
+        		background-color: #FFFFFF;
+        		height: 60px;
+        	}
+        	.app-icon {
+        		position: relative;
+        		top: 10px;
+        		width: 40px;
+        		height: 40px;
+        	}
+        	.header-container {
+        		width: 71%;
+        		height: 60px;
+        		margin: 0 auto;
+        	}
+        	.navi-header {
+        		position: relative;
+        		right: -800px;
+        		top: -40px;
+        		width: 180px;
+        	}
+        	
+        	.navi-item {
+        		display: inline;
+        	}
+        	.navi-text {
+        		font-size: 15px;
+        		font-weight: lighter;
+        		color: #606060;
+        	}
+        	.first-block {
+        		background-color: #1C1C21;
+        		width: 100%;
+        		height: 667px;
+        	}
+        	.first-block-container {
+        		width: 844px;
+        		margin: 0 auto;
+        		height: 667px;
+        	}
+        	.first-phone {
+        		position: relative;
+        		top: 90px;
+        		width: 240px;
+        		height: 483px;
+        	}
+        	.main-title {
+        		position: relative;
+        		top: -300px;
+        		left: 50px;
+        		color: #FFFFFF;
+        		font-size: 32px;
+        	}
+        	.intro {
+        		position: relative;
+        		width: 60%;
+        		top: -250px;
+        		left: 290px;
+        		color: #FFFFFF;
+        		font-size: 22px;
+        		font-weight: lighter;
+        	}
+        	.app-store-icon {
+        		position: relative;
+        		width: 50px;
+        		height: 50px;
+        		top: -210px;
+        		left: 290px;
+        	}
+        	.second-block {
+        		background-color: #FFFFFF;
+        		width: 100%;
+        		height: 667px;
+        	}
+        	.second-block-container {
+        		width: 71%;
+        		margin: 0 auto;
+        	}
+        	.module-title {
+        		position: relative;
+        		top: 30px;
+        		font-size: 32px;
+        		color: #606060;
+        		text-align: center;
+        	}
+        	.second-phone {
+        		position: relative;
+        		top: -300px;
+        		left: 40%;
+        		width: 240px;
+        		height: 483px;
+        	}
+        	.left-feature-list {
+        		position: relative;
+        		top: 100px;
+        	}
+        	.left-feature {
+        		width: 300px;
+        		text-align: right;
+        	}
+        	.left-feature-title {
+        		position: relative;
+        		right: -30px;
+        		font-size: 24px;
+        		font-weight: normal;
+        		color: #606060;
+        		line-height: 40px;
+        	}
+        	.left-feature-detail {
+        		position: relative;
+        		top: 10px;
+        		float: right;
+        		width: 360px;
+        		font-size: 20px;
+        		font-weight: lighter;
+        		color: #AFAFAF;
+        		margin-bottom: 30px;
+        	}
+        	.left-feature-icon {
+        		position: relative;
+        		top: 10px;
+        		right: -50px;
+        		width: 26px;
+        		height: 30px;
+        	}
+        	.right-feature-list {
+        		position: relative;
+        		top: 85px;
+        	}
+        	.right-feature {
+        		width: 300px;
+        		text-align: left;
+        	}
+        	.right-feature-title {
+        		position: relative;
+        		right: -30px;
+        		font-size: 24px;
+        		font-weight: normal;
+        		color: #606060;
+        	}
+        	.right-feature-detail {
+        		position: relative;
+        		top: 10px;
+        		float: right;
+        		width: 360px;
+        		font-size: 20px;
+        		font-weight: lighter;
+        		color: #AFAFAF;
+        	}
+        	.right-feature-icon {
+        		position: relative;
+        		top: 10px;
+        		right: -50px;
+        		width: 26px;
+        		height: 30px;
+        	}
+
+        	.footer {
+        		width: 100%;
+        		height: 100px;
+        	}
+        	.footer-label {
+        		font-size: 20px;
+        		color: #626262;
+        	}
+        	a,p,span {
+        		text-decoration:none;
+        		font-family: Helvetica;
+        		/*font-family: Monospace;*/
+        	}
+        	li {
+        		list-style-type: none;
+        	}
+        </style>
     </head>
     <body>
-        <div class="note-wrapper">
-            <h1>MoneyLib</h1>
-<p>MoneyLib is a simple iOS application for you to cultivate accounting habits. With clear interface and simple interaction, it will be very nice for you to use without any difficulties.</p>
-<br>
-<br>
-<br>
-<br>
-
+        <div class='header'>
+        	<div class='header-container'>
+        		<img class='app-icon' src='images/money-lib/app-icon.png'/>
+	        	<ul class='navi-header'>
+	        		<li class='navi-item'><a class='navi-text' href=''>MoneyLib</a></li>
+	        		&nbsp;&nbsp;&nbsp;
+	        		<li class='navi-item'><a class='navi-text' href=''>Features</a></li>
+	        	</ul>
+        	</div>
         </div>
-
-        <style>
-            html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}q,blockquote{quotes:none}q:before,q:after,blockquote:before,blockquote:after{content:"";content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}html{font-size:87.5%;line-height:1.57143em}html{font-size:14px;line-height:1.6em;-webkit-text-size-adjust:100%}body{background:#fcfcfc;color:#545454;text-rendering:optimizeLegibility;font-family:"Avenir-Book"}a{color:#de4c4f;text-decoration:none}h1{font-family:"Avenir-Medium";color:#333;font-size:1.6em;line-height:1.3em;margin-bottom:.78571em}h2{font-family:"Avenir-Medium";color:#333;font-size:1.3em;line-height:1em;margin-bottom:.62857em}h3{font-family:"Avenir-Medium";color:#333;font-size:1.15em;line-height:1em;margin-bottom:.47143em}p{margin-bottom:1.57143em;hyphens:auto}hr{height:1px;border:0;background-color:#dedede;margin:-1px auto 1.57143em auto}ul,ol{margin-bottom:1.57143em}ul ul,ul ol,ol ul,ol ol{margin-bottom:0px}b,strong{font-family:"Avenir-Heavy"}i,em{font-family:"Avenir-BookOblique"}code{font-family:"Menlo-Regular"}.text-overflow-ellipsis{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.note-wrapper{max-width:46em;margin:0px auto;padding:1.57143em 3.14286em}.note-wrapper.spotlight-preview{overflow-x:hidden}u{text-decoration:none;background-image:linear-gradient(to bottom, rgba(0,0,0,0) 50%,#e06e73 50%);background-repeat:repeat-x;background-size:2px 2px;background-position:0 1.05em}s{color:#878787}p{margin-bottom:0.1em}hr{margin-bottom:0.7em;margin-top:0.7em}ul li{text-indent:-0.6em}ul li:before{content:"•";color:#e06e73;display:inline-block;margin-right:0.3em}ul ul{margin-left:1.25714em}ol li{text-indent:-1.25em}ol ol{margin-left:1.25714em}blockquote{display:block;margin-left:-1em;padding-left:0.8em;border-left:0.2em solid #e06e73}.todo-list ul{margin-left:1.88571em}.todo-list li{text-indent:-1.75em}.todo-list li:before{content:"";display:static;margin-right:0px}.todo-checkbox{text-indent:-1.7em}.todo-checkbox svg{margin-right:0.3em;position:relative;top:0.2em}.todo-checkbox svg #check{display:none}.todo-checkbox.todo-checked #check{display:inline}.todo-checkbox.todo-checked .todo-text{text-decoration:line-through;color:#878787}.code-inline{display:inline-block;background:white;border:solid 1px #dedede;padding:0.0em 0.5em;font-size:0.9em}.code-multiline{display:block;background:white;border:solid 1px #dedede;padding:0.7em 1em;font-size:0.9em;overflow-x:auto}.hashtag{display:inline-block;color:white;background:#b8bfc2;padding:0.0em 0.5em;border-radius:1em}.hashtag a{color:#fff}.address a{color:#545454;background-image:linear-gradient(to bottom, rgba(0,0,0,0) 50%,#0da35e 50%);background-repeat:repeat-x;background-size:2px 2px;background-position:0 1.05em}.address svg{position:relative;top:0.2em;display:inline-block;margin-right:0.2em}.color-preview{display:inline-block;width:1em;height:1em;border:solid 1px rgba(0,0,0,0.3);border-radius:50%;margin-right:0.1em;position:relative;top:0.2em;white-space:nowrap}.color-code{margin-right:0.2em;font-family:"Menlo-Regular";font-size:0.9em}.color-hash{opacity:0.4}.ordered-list-number{color:#e06e73;text-align:right;display:inline-block;min-width:1em}.arrow svg{position:relative;top:0.08em;display:inline-block;margin-right:0.15em;margin-left:0.15em}.arrow svg #rod{stroke:#545454}.arrow svg #point{fill:#545454}img{max-width:100%;height:auto}
-
-        </style>
+        <div class='first-block'>
+        	<div class='first-block-container'>
+        		<img class='first-phone' src='images/money-lib/lock-screen.png'/>
+	        	<span class='main-title'>MoneyLib</span>
+	        	<p class='intro'>
+	        		This is an iOS application that allows you to record daily expense and income. It’s much handy that you can make a record in seconds after every payment. With simplest UI and easiest interaction, you’ll love using this tiny app!
+	        	</p>
+	        	<img class='app-store-icon' src='images/money-lib/app-store-icon.png'/>
+        	</div>
+        </div>
+        <div class='second-block'>
+        	<div class='second-block-container'>
+        		<div class='module-title'>
+					<span>Features</span>
+        		</div>
+        		<ul class='left-feature-list'>
+        			<li class='feature-li'>
+			        	<div class='left-feature'>
+			        		<span class='left-feature-title'>Fast accounting</span>
+			        		<img class='left-feature-icon' src='images/money-lib/fast-icon.png'>
+			        		<span class='left-feature-detail'>Making a record in seconds, simple interaction and easy to use.</span>
+			        	</div>
+		        	</li>
+		        	<li class='feature-li'>
+		        		<div class='left-feature'>
+			        		<span class='left-feature-title'>Smart chart</span>
+			        		<img class='left-feature-icon' src='images/money-lib/chart-icon.png'>
+			        		<span class='left-feature-detail'>Powerful and smart chart allows you to analyse data in various dimensions.</span>
+			        	</div>
+			        </li>
+		        	<li class='feature-li'>
+		        		<div class='left-feature'>
+			        		<span class='left-feature-title'>Various categories</span>
+			        		<img class='left-feature-icon' src='images/money-lib/category-icon.png'>
+			        		<span class='left-feature-detail'>A mass of categories with customized content.</span>
+			        	</div>
+			        </li>
+	        	</ul>
+	        	<img class='second-phone' src='images/money-lib/main-screen.png'/>
+	        	<ul class='right-feature-list'>
+	        		<li class='feature-li'>
+	        			<div class='right-feature'>
+			        		<img class='right-feature-icon' src='images/money-lib/fast-icon.png'>
+			        		<span class='right-feature-title'>iCloud synchronization</span>
+			        		<span class='right-feature-detail'>Synchronizing accounting data between all your apple devices, keep everything up to date.</span>
+			        	</div>
+	        		</li>
+	        		<li class='feature-li'>
+	        			<div class='right-feature'>
+			        		<img class='right-feature-icon' src='images/money-lib/chart-icon.png'>
+			        		<span class='right-feature-title'>Fingerprint / Passcode validation</span>
+			        		<span class='right-feature-detail'>Protecting your data from being watching by others, security is important.</span>
+			        	</div>
+	        		</li>
+	        		<li class='feature-li'>
+	        			<div class='right-feature'>
+			        		<img class='right-feature-icon' src='images/money-lib/category-icon.png'>
+			        		<span class='right-feature-title'>Multi-pocket management</span>
+			        		<span class='right-feature-detail'>More than one pocket you can record expense and income data.</span>
+			        	</div>
+	        		</li>
+	        	</ul>
+        	</div>
+        </div>
+        <div class='footer'>
+        	<span class='footer-label'>made in Hangzhou China</span>
+        	<span class='footer-label'>Copyright © 2017 mesird</span>
+        </div>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
