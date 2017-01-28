@@ -5,207 +5,375 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style type="text/css">
-        	body {
-        		width: 100%;
-        		clear: both;
-        		margin: 0px;
-        		padding: 0px;
-        	}
-        	.header {
-        		background-color: #FFFFFF;
-        		height: 60px;
-        	}
-        	.app-icon {
-        		position: relative;
-        		top: 10px;
-        		width: 40px;
-        		height: 40px;
-        	}
-        	.header-container {
-        		width: 71%;
-        		height: 60px;
-        		margin: 0 auto;
-        	}
-        	.navi-header {
-        		position: relative;
-        		right: -800px;
-        		top: -40px;
-        		width: 180px;
-        	}
-        	
-        	.navi-item {
-        		display: inline;
-        	}
-        	.navi-text {
-        		font-size: 15px;
-        		font-weight: lighter;
-        		color: #606060;
-        	}
-        	.first-block {
-        		background-color: #1C1C21;
-        		width: 100%;
-        		height: 667px;
-        	}
-        	.first-block-container {
-        		width: 844px;
-        		margin: 0 auto;
-        		height: 667px;
-        	}
-        	.first-phone {
-        		position: relative;
-        		top: 90px;
-        		width: 240px;
-        		height: 483px;
-        	}
-        	.main-title {
-        		position: relative;
-        		top: -300px;
-        		left: 50px;
-        		color: #FFFFFF;
-        		font-size: 32px;
-        	}
-        	.intro {
-        		position: relative;
-        		width: 60%;
-        		top: -250px;
-        		left: 290px;
-        		color: #FFFFFF;
-        		font-size: 22px;
-        		font-weight: lighter;
-        	}
-        	.app-store-icon {
-        		position: relative;
-        		width: 50px;
-        		height: 50px;
-        		top: -210px;
-        		left: 290px;
-        	}
-        	.second-block {
-        		background-color: #FFFFFF;
-        		width: 100%;
-        		height: 667px;
-        	}
-        	.second-block-container {
-        		width: 71%;
-        		margin: 0 auto;
-        	}
-        	.module-title {
-        		position: relative;
-        		top: 30px;
-        		font-size: 32px;
-        		color: #606060;
-        		text-align: center;
-        	}
-        	.second-phone {
-        		position: relative;
-        		top: -300px;
-        		left: 40%;
-        		width: 240px;
-        		height: 483px;
-        	}
-        	.left-feature-list {
-        		position: relative;
-        		top: 100px;
-        	}
-        	.left-feature {
-        		width: 300px;
-        		text-align: right;
-        	}
-        	.left-feature-title {
-        		position: relative;
-        		right: -30px;
-        		font-size: 24px;
-        		font-weight: normal;
-        		color: #606060;
-        		line-height: 40px;
-        	}
-        	.left-feature-detail {
-        		position: relative;
-        		top: 10px;
-        		float: right;
-        		width: 360px;
-        		font-size: 20px;
-        		font-weight: lighter;
-        		color: #AFAFAF;
-        		margin-bottom: 30px;
-        	}
-        	.left-feature-icon {
-        		position: relative;
-        		top: 10px;
-        		right: -50px;
-        		width: 26px;
-        		height: 30px;
-        	}
-        	.right-feature-list {
-        		position: relative;
-        		top: -757px;
-        		left: 700px;
-        	}
-        	.right-feature {
-        		width: 400px;
-        		text-align: left;
-        	}
-        	.right-feature-title {
-        		position: relative;
-        		left: 68px;
-        		font-size: 24px;
-        		font-weight: normal;
-        		color: #606060;
-        	}
-        	.right-feature-detail {
-        		position: relative;
-        		top: 10px;
-        		left: 97px;
-        		float: left;
-        		width: 400px;
-        		font-size: 20px;
-        		font-weight: lighter;
-        		color: #AFAFAF;
-        		margin-bottom: 30px;
-        	}
-        	.right-feature-icon {
-        		position: relative;
-        		top: 10px;
-        		right: -50px;
-        		width: 26px;
-        		height: 30px;
-        	}
+        @media screen and (max-width: 1024px) {
+            .navi-header {
+                position: relative;
+                right: -200px;
+                top: -40px;
+                width: 180px;
+            }
+            .app-icon {
+                position: relative;
+                top: 10px;
+                left: -50px;
+                width: 40px;
+                height: 40px;
+            }
+            .first-block {
+                position: relative;
+                top: 60px;
+                background-color: #1C1C21;
+                width: 100%;
+                height: 952px;
+            }
+            .first-block-container {
+                width: 100%;
+                margin: 0 auto;
+                height: 952px;
+            }
+            .first-phone {
+                position: relative;
+                top: 105px;
+                left: 25%;
+                width: 240px;
+                height: 483px;
+            }
+            .main-title {
+                position: relative;
+                top: -420px;
+                left: -60px;
+                color: #FFFFFF;
+                font-size: 32px;
+            }
+            .intro {
+                position: relative;
+                width: 80%;
+                top: 120px;
+                left: 10%;
+                color: #FFFFFF;
+                font-size: 22px;
+                font-weight: lighter;
+            }
+            .app-store-icon {
+                position: relative;
+                width: 50px;
+                height: 50px;
+                top: 140px;
+                left: 44%;
+            }
+            .second-block {
+                position: relative;
+                top: 60px;
+                background-color: #FFFFFF;
+                width: 100%;
+                height: 1434px;
+            }
+            .second-phone {
+                position: relative;
+                top: -360px;
+                left: 25%;
+                width: 240px;
+                height: 483px;
+            }
+            .left-feature-list {
+                position: relative;
+                top: 550px;
+            }
+            .left-feature {
+                width: 300px;
+                text-align: left;
+            }
+            .left-feature-title {
+                position: relative;
+                left: 100px;
+                font-size: 24px;
+                font-weight: normal;
+                color: #606060;
+                line-height: 40px;
+            }
+            .left-feature-detail {
+                position: relative;
+                top: 0px;
+                left: 100px;
+                float: right;
+                width: 300px;
+                font-size: 20px;
+                font-weight: lighter;
+                color: #AFAFAF;
+                margin-bottom: 30px;
+            }
+            .left-feature-icon-1 {
+                position: relative;
+                top: 6px;
+                left: -120px;
+                width: 26px;
+                height: 30px;
+            }
+            .left-feature-icon-2 {
+                position: relative;
+                top: 6px;
+                left: -74px;
+                width: 26px;
+                height: 30px;
+            }
+            .left-feature-icon-3 {
+                position: relative;
+                top: 6px;
+                left: -145px;
+                width: 26px;
+                height: 30px;
+            }
+            .right-feature-list {
+                position: relative;
+                top: 60px;
+                left: 5px;
+            }
+            .right-feature {
+                width: 300px;
+                text-align: left;
+            }
+            .right-feature-title {
+                position: relative;
+                left: 65px;
+                font-size: 24px;
+                font-weight: normal;
+                color: #606060;
+            }
+            .right-feature-detail {
+                position: relative;
+                top: 5px;
+                left: 97px;
+                float: left;
+                width: 400px;
+                font-size: 20px;
+                font-weight: lighter;
+                color: #AFAFAF;
+                margin-bottom: 30px;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            .navi-header {
+                position: relative;
+                right: -800px;
+                top: -40px;
+                width: 180px;
+            }
+            .app-icon {
+                position: relative;
+                top: 10px;
+                width: 40px;
+                height: 40px;
+            }
+            .first-block {
+                position: relative;
+                top: 60px;
+                background-color: #1C1C21;
+                width: 100%;
+                height: 667px;
+            }
+            .first-block-container {
+                width: 844px;
+                margin: 0 auto;
+                height: 667px;
+            }
+            .first-phone {
+                position: relative;
+                top: 90px;
+                width: 240px;
+                height: 483px;
+            }
+            .main-title {
+                position: relative;
+                top: -300px;
+                left: 50px;
+                color: #FFFFFF;
+                font-size: 32px;
+            }
+            .intro {
+                position: relative;
+                width: 60%;
+                top: -250px;
+                left: 290px;
+                color: #FFFFFF;
+                font-size: 22px;
+                font-weight: lighter;
+            }
+            .app-store-icon {
+                position: relative;
+                width: 50px;
+                height: 50px;
+                top: -210px;
+                left: 290px;
+            }
+            .second-block {
+                position: relative;
+                top: 60px;
+                background-color: #FFFFFF;
+                width: 100%;
+                height: 667px;
+            }
+            .second-block-container {
+                width: 71%;
+                height: 100%;
+                margin: 0 auto;
+            }
+            .second-phone {
+                position: relative;
+                top: -300px;
+                left: 40%;
+                width: 240px;
+                height: 483px;
+            }
+            .left-feature-list {
+                position: relative;
+                top: 100px;
+            }
+            .left-feature {
+                width: 300px;
+                text-align: right;
+            }
+            .left-feature-title {
+                position: relative;
+                right: -30px;
+                font-size: 24px;
+                font-weight: normal;
+                color: #606060;
+                line-height: 40px;
+            }
+            .left-feature-detail {
+                position: relative;
+                top: 10px;
+                float: right;
+                width: 360px;
+                font-size: 20px;
+                font-weight: lighter;
+                color: #AFAFAF;
+                margin-bottom: 30px;
+            }
+            .left-feature-icon {
+                position: relative;
+                top: 10px;
+                right: -50px;
+                width: 26px;
+                height: 30px;
+            }
+            .right-feature-list {
+                position: relative;
+                top: -757px;
+                left: 700px;
+            }
+            .right-feature {
+                width: 400px;
+                text-align: left;
+            }
+            .right-feature-title {
+                position: relative;
+                left: 68px;
+                font-size: 24px;
+                font-weight: normal;
+                color: #606060;
+            }
+            .right-feature-detail {
+                position: relative;
+                top: 10px;
+                left: 97px;
+                float: left;
+                width: 400px;
+                font-size: 20px;
+                font-weight: lighter;
+                color: #AFAFAF;
+                margin-bottom: 30px;
+            }
+        }
+            body {
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+            }
+            .header {
+                position: fixed;
+                width: 100%;
+                background-color: #FFFFFF;
+                height: 60px;
+                z-index: 9999;
+            }
+            .header-container {
+                width: 71%;
+                height: 60px;
+                margin: 0 auto;
+            }
+            .navi-item {
+                display: inline;
+            }
+            .navi-text {
+                font-size: 15px;
+                font-weight: lighter;
+                color: #606060;
+            }
+            .module-title {
+                position: relative;
+                top: 30px;
+                font-size: 32px;
+                color: #606060;
+                font-weight: lighter;
+                text-align: center;
+            }
+            
 
-        	.footer {
-        		background-color: #FFFFFF;
-        		width: 100%;
-        		height: 100px;
-        		text-align: center;
-        	}
-        	.footer-label {
-        		font-size: 14px;
-        		color: #626262;
-        		font-weight: lighter;
-        		line-height: 20px;
-        		display: block;
-        	}
-        	a,p,span {
-        		text-decoration:none;
-        		font-family: Helvetica;
-        		/*font-family: Monospace;*/
-        	}
-        	li {
-        		list-style-type: none;
-        	}
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            .right-feature-icon {
+                position: relative;
+                top: 10px;
+                right: -50px;
+                width: 26px;
+                height: 30px;
+            }
+
+            .footer {
+                position: relative;
+                top: 60px;
+                background-color: #FFFFFF;
+                width: 100%;
+                height: 100px;
+                text-align: center;
+            }
+            .footer-label {
+                font-size: 14px;
+                color: #626262;
+                font-weight: lighter;
+                line-height: 20px;
+                display: block;
+            }
+            a,p,span {
+                text-decoration:none;
+                font-family: Helvetica;
+                /*font-family: Monospace;*/
+            }
+            li {
+                list-style-type: none;
+            }
         </style>
     </head>
     <body>
         <div class='header'>
         	<div class='header-container'>
         		<img class='app-icon' src='images/money-lib/app-icon.png'/>
-	        	<ul class='navi-header'>
-	        		<li class='navi-item'><a class='navi-text' href=''>MoneyLib</a></li>
+                <ul class='navi-header'>
+	        		<li class='navi-item'><a class='navi-text' href='#money-lib-block'>MoneyLib</a></li>
 	        		&nbsp;&nbsp;&nbsp;
-	        		<li class='navi-item'><a class='navi-text' href=''>Features</a></li>
+	        		<li class='navi-item'><a class='navi-text' href='#feature-block'>Features</a></li>
 	        	</ul>
         	</div>
         </div>
-        <div class='first-block'>
+        <div class='first-block' id='money-lib-block'>
         	<div class='first-block-container'>
         		<img class='first-phone' src='images/money-lib/lock-screen.png'/>
 	        	<span class='main-title'>MoneyLib</span>
@@ -215,7 +383,7 @@
 	        	<img class='app-store-icon' src='images/money-lib/app-store-icon.png'/>
         	</div>
         </div>
-        <div class='second-block'>
+        <div class='second-block' id='feature-block'>
         	<div class='second-block-container'>
         		<div class='module-title'>
 					<span>Features</span>
@@ -224,21 +392,21 @@
         			<li class='feature-li'>
 			        	<div class='left-feature'>
 			        		<span class='left-feature-title'>Fast accounting</span>
-			        		<img class='left-feature-icon' src='images/money-lib/fast-icon.png'>
+			        		<img class='left-feature-icon left-feature-icon-1' src='images/money-lib/fast-icon.png'>
 			        		<span class='left-feature-detail'>Making a record in seconds, simple interaction and easy to use.</span>
 			        	</div>
 		        	</li>
 		        	<li class='feature-li'>
 		        		<div class='left-feature'>
 			        		<span class='left-feature-title'>Smart chart</span>
-			        		<img class='left-feature-icon' src='images/money-lib/chart-icon.png'>
+			        		<img class='left-feature-icon left-feature-icon-2' src='images/money-lib/chart-icon.png'>
 			        		<span class='left-feature-detail'>Powerful and smart chart allows you to analyse data in various dimensions.</span>
 			        	</div>
 			        </li>
 		        	<li class='feature-li'>
 		        		<div class='left-feature'>
 			        		<span class='left-feature-title'>Various categories</span>
-			        		<img class='left-feature-icon' src='images/money-lib/category-icon.png'>
+			        		<img class='left-feature-icon left-feature-icon-3' src='images/money-lib/category-icon.png'>
 			        		<span class='left-feature-detail'>A mass of categories with customized content.</span>
 			        	</div>
 			        </li>
@@ -270,7 +438,7 @@
         	</div>
         </div>
         <div class='footer'>
-        	<span class='footer-label'>made in Hangzhou China</span>
+        	<span class='footer-label'>Made in Hangzhou China</span>
         	<span class='footer-label'>Copyright © 2017 mesird</span>
         </div>
     </body>

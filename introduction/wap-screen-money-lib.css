@@ -1,0 +1,204 @@
+<style type="text/css">
+	body {
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+	.header {
+        position: fixed;
+        width: 100%;
+		background-color: #FFFFFF;
+		height: 60px;
+        z-index: 9999;
+	}
+	.app-icon {
+		position: relative;
+		top: 10px;
+		width: 40px;
+		height: 40px;
+	}
+	.header-container {
+		width: 71%;
+		height: 60px;
+		margin: 0 auto;
+	}
+	.navi-header {
+		position: relative;
+		right: -800px;
+		top: -40px;
+		width: 180px;
+	}
+	.navi-item {
+		display: inline;
+	}
+	.navi-text {
+		font-size: 15px;
+		font-weight: lighter;
+		color: #606060;
+	}
+    .separator {
+        width: 100%;
+        height: 1px;
+        background-color: #AFAFAF;
+        display: block;
+    }
+	.first-block {
+        position: relative;
+        top: 60px;
+		background-color: #1C1C21;
+		width: 100%;
+		height: 667px;
+	}
+	.first-block-container {
+		width: 844px;
+		margin: 0 auto;
+		height: 667px;
+	}
+	.first-phone {
+		position: relative;
+		top: 90px;
+		width: 240px;
+		height: 483px;
+	}
+	.main-title {
+		position: relative;
+		top: -300px;
+		left: 50px;
+		color: #FFFFFF;
+		font-size: 32px;
+	}
+	.intro {
+		position: relative;
+		width: 60%;
+		top: -250px;
+		left: 290px;
+		color: #FFFFFF;
+		font-size: 22px;
+		font-weight: lighter;
+	}
+	.app-store-icon {
+		position: relative;
+		width: 50px;
+		height: 50px;
+		top: -210px;
+		left: 290px;
+	}
+	.second-block {
+        position: relative;
+        top: 60px;
+		background-color: #FFFFFF;
+		width: 100%;
+		height: 667px;
+	}
+	.second-block-container {
+		width: 71%;
+		height: 100%;
+		margin: 0 auto;
+	}
+	.module-title {
+		position: relative;
+		top: 30px;
+		font-size: 32px;
+		color: #606060;
+        font-weight: lighter;
+		text-align: center;
+	}
+	.second-phone {
+		position: relative;
+		top: -300px;
+		left: 40%;
+		width: 240px;
+		height: 483px;
+	}
+	.left-feature-list {
+		position: relative;
+		top: 100px;
+	}
+	.left-feature {
+		width: 300px;
+		text-align: right;
+	}
+	.left-feature-title {
+		position: relative;
+		right: -30px;
+		font-size: 24px;
+		font-weight: normal;
+		color: #606060;
+		line-height: 40px;
+	}
+	.left-feature-detail {
+		position: relative;
+		top: 10px;
+		float: right;
+		width: 360px;
+		font-size: 20px;
+		font-weight: lighter;
+		color: #AFAFAF;
+		margin-bottom: 30px;
+	}
+	.left-feature-icon {
+		position: relative;
+		top: 10px;
+		right: -50px;
+		width: 26px;
+		height: 30px;
+	}
+	.right-feature-list {
+		position: relative;
+		top: -757px;
+		left: 700px;
+	}
+	.right-feature {
+		width: 400px;
+		text-align: left;
+	}
+	.right-feature-title {
+		position: relative;
+		left: 68px;
+		font-size: 24px;
+		font-weight: normal;
+		color: #606060;
+	}
+	.right-feature-detail {
+		position: relative;
+		top: 10px;
+		left: 97px;
+		float: left;
+		width: 400px;
+		font-size: 20px;
+		font-weight: lighter;
+		color: #AFAFAF;
+		margin-bottom: 30px;
+	}
+	.right-feature-icon {
+		position: relative;
+		top: 10px;
+		right: -50px;
+		width: 26px;
+		height: 30px;
+	}
+
+	.footer {
+        position: relative;
+        top: 60px;
+		background-color: #FFFFFF;
+		width: 100%;
+		height: 100px;
+		text-align: center;
+	}
+	.footer-label {
+		font-size: 14px;
+		color: #626262;
+		font-weight: lighter;
+		line-height: 20px;
+		display: block;
+	}
+	a,p,span {
+		text-decoration:none;
+		font-family: Helvetica;
+		/*font-family: Monospace;*/
+	}
+	li {
+		list-style-type: none;
+	}
+</style>
