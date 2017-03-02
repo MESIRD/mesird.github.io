@@ -159,7 +159,7 @@ There are several values at the beginning, they are:
 
 * Code Type`ARM-64 (Native)`
 
-    application CPU architecture
+    application CPU architecture, this will be used in the following passage
 
 * Parent Process`launchd [1]`
 
@@ -358,10 +358,16 @@ Symbolicating with .dSYM file
     34  MyAppName                     0x0000000100165184 0x100024000 + 1315204
     ```
     
+    the architecture in crash log:
+    
+    ```
+    Code Type:           ARM-64 (Native)
+    ```
+    
     using following command to get the method name and line number
     
     ```
-    atos -o MyAppName.app.dSYM/Contents/DWARF/MyAppName -arch ARM7 -l 0x100024000 0x0000000100165184
+    atos -o MyAppName.app.dSYM/Contents/DWARF/MyAppName -arch arm64 -l 0x100024000 0x0000000100165184
     ```
 
 references
