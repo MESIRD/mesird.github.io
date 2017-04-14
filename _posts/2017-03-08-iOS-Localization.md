@@ -69,5 +69,11 @@ Select the language you expect listed in the options, app will display text in t
 
 ## Localization in cocoapods
 
+You've already know how to use localized string in your project, but what if you want to create a pod with multiple languages?
+
+I won't teach you how to create pod, you can get the tutorials [here](https://guides.cocoapods.org).
+
+
+
 
 
