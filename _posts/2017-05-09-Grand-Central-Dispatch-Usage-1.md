@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Grand Central Dispatch 用法介绍（一）"
+title:  "Grand Central Dispatch (1/2)"
 date:   2017-05-09 20:54:20
 categories: iOS
 tags: iOS
